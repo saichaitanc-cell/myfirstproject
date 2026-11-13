@@ -9,7 +9,7 @@ print(readings)
 readings.append(10)#add value at END
 print(readings)
 readings.insert(0,0.11)#add at position 0
-readings.insert(5,0.55)#add at position 5
+readings.insert(5,0.55)#add at position 5#
 print(readings)
 readings.remove(3)
 print(readings)
