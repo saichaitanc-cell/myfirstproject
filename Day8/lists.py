@@ -27,5 +27,12 @@ if 9 in readings:
     readings.remove(9)
 else:
     readings.insert(11,99)
-
 print(readings)
+
+low_readings = [] #empty list
+for v in [12.8,10.3,11.2,13.8]:
+    if v < 11.5:
+        low_readings.append(v)
+
+print(f"Low Readings:{low_readings}")
+
