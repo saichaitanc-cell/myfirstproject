@@ -12,7 +12,7 @@ print(readings)
 
 #Safelookup
 #print(readings["XX99"]) #leads to crash
-print(readings.get("XX99")) #no crash results NONE
+print(readings.get("XX99")) #no crash results NON
 print(readings.get("XX99",5.5)) # XX99 is not in readings dictionary, so it returns your own default value
 print("OT02" in readings) # TRUE Check the keys
 
