@@ -13,7 +13,7 @@ print(readings)
 #Safelookup
 #print(readings["XX99"]) #leads to crash
 print(readings.get("XX99")) #no crash results NON
-print(readings.get("XX99",5.5)) # XX99 is not in readings dictionary, so it returns your own default value
+print(readings.get("XX99",0)) # XX99 is not in readings dictionary, so it returns your own default value
 print("OT02" in readings) # TRUE Check the keys
 
 #LOOP
@@ -26,3 +26,10 @@ print(list(readings.values()))  #just the values
 #print(readings.keys())  #Just the names, outputs dict_keys(['OT02', 'VM03', 'LP04'])
 #print(readings.values())  #just the values, outputs dict_values([98.5, 13.1, 3.3])
 
+items = ["milk","eggs","milk","bread","milk"]
+cart ={}
+
+for item in items:
+    cart[item]=cart.get(item,0) + 1
+
+print(cart)
